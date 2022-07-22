@@ -7,7 +7,80 @@
     <title>Tours & Viajes</title>
 </head>
 <body>
-    
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>V</span>iaje</a>
+
+        <nav class="navbar">
+            <a href="#home">Inicio</a>
+            <a href="#book">Reservar</a>
+            <a href="#packages">Paquetes</a>
+            <a href="#services">Servicios</a>
+            <a href="#gallery">Galería</a>
+            <a href="#review">Reseñas</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+            <i class="fa-solid fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+
+            <input type="search" id="search-bar" placeholder="Buscar Aqui...">
+            <label for="search-bar" class="fa-solid fa-magnifying-glass"></label>
+
+        </form>
+    </header>
+    <!-- FIN HEADER -->
+
+    <!-- INICIO DE SESION -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>Iniciar sesión</h3>
+            <input type="email" class="box" placeholder="Correo electronico">
+            <input type="password" class="box" placeholder="Contraseña">
+            <input type="submit" value="Iniciar sesión ahora" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Recuerdame</label>
+            <p>¿Olvidó su contraseña? <a href="#">Haga click aquí</a></p>
+            <p>¿No tiene una cuenta? <a href="#">Regístrese ahora</a></p>
+        </form>
+    </div>
+
+    <!-- FIN INICIO DE SESION -->
+
+    <!-- HOME -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>La aventura vale la pena</h3>
+            <p>Descubre nuevos lugares con nosotros, la aventura te espera</p>
+            <a href="#" class="btn">Descubre más</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="./video/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="./video/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="./video/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="./video/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="./video/vid-5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="./video/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+
+    <!-- FIN DE HOME -->
 
     <script src="./js/script.js"></script>
 </body>
